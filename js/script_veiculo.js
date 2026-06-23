@@ -4,7 +4,8 @@ let formulario= document.getElementById("formveiculo");
 let lista= document.getElementById("listaveiculos");
 formulario.addEventListener("submit",function(event){
 event.preventDefault()
-let marca
+let marca= document.getElementById("marca").Value;
+let modelo= document.getElementById("modelo").value;
 })
 
 
