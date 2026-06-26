@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolver uma aplicação web simples para cadastro de
         veículos usando as tecnologias web.</title>
-        <script src="js/script_veiculo.js" defer></script>
-        <link rel="stylesheet" href="css/style_veiculos.css">
+
+    <script src="js/script_veiculo.js" type="module" defer></script>
+
+  <link rel="stylesheet" href="css/style_veiculos.css">
+
+  
+
 </head>
+
 <body>
-    <form>
+
+    <h1>Cadastro Veículos</h1>
+    <form id="formVeiculo">
+
         <label for="modelo">Modelo:</label>
-        <input type="text" name="modelo" id="modelo"><br>
+        <input type="text" name="modelo" id="modelo"><br> <br>
 
         <label for="marca">Marca:</label>
-        <input type="text" name="marca" id="marca"><br>
+        <input type="text" name="marca" id="marca"><br><br>
 
         <label for="placa">Placa:</label>
-        <input type="text" name="placa" id="placa"><br>
+        <input type="text" name="placa" id="placa"><br><br>
 
-        <label for="fabricado"> Fabricado:</label>
-        <input type="text" name="fabricado" id="fabricado"><br>
+        <label for="ano"> Ano:</label>
+        <input type="number" name="ano" id="ano"><br><br>
 
-         <label for="valor">Valor:</label>
-         <input type="text" name="valor" id="valor">
+        <label for="valor">Valor:</label> 
+        <input type="number" name="valor" id="valor">
 
-         <label for="combustivel">Combustivel:</label>
-         <input type="text" name="combustivel" id="combustivel">
+        <h3>Tipo de combustivel</h3>
 
-         <button type="submit">Adicionar</button>
-         <button type="reset">Limpar</button>
+        <label>
+            <input type="radio" name="combustivel" value="gasolina" required>
+            Gasolina
+        </label><br>
+
+        <label>
+            <input type="radio" name="combustivel" value="etanol">
+            Etanol
+        </label><br>
+
+        <label>
+            <input type="radio" name="combustivel" value="bicombustivel">
+            Bicombustivel
+        </label><br>
+
+        <label>
+            <input type="radio" name="combustivel" value="hidrico">
+            Hidrico
+        </label><br>
+
+        <label>
+            <input type="radio" name="combustivel" value="eletrico">
+            Eletrico
+        </label>
+
+        <br><br>
+
+
+        <button type="submit">Adicionar</button>
+        <button type="reset">Limpar</button>
 
 
     </form>
     <hr>
+    <h2>Lista de Veiculos</h2>
     <div id="lista veiculos"></div>
 </body>
+
 </html>
